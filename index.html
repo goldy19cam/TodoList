@@ -565,10 +565,9 @@
 
             <div class="controls-row">
                 <div class="filters">
-                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn active" data-filter="all">Toutes</button>
                     <button class="filter-btn" data-filter="active">En cours</button>
                     <button class="filter-btn" data-filter="done">Terminées</button>
-                    <button class="filter-btn" data-filter="overdue">En retard</button>
                 </div>
                 <select id="sortSelect">
         <option value="created">Tri: Ajout</option>
@@ -669,7 +668,7 @@
             prioritySelect.value = 'medium';
             saveTasks();
             render();
-            showToast('Tâche ajoutée 🌱');
+            showToast(' 🌱 Task added🌱');
             taskInput.focus();
         }
 
@@ -679,7 +678,7 @@
                 t.done = !t.done;
                 saveTasks();
                 render();
-                if (t.done) showToast('Well done ! 🌼');
+                if (t.done) showToast('🌼 Well done ! 🌼');
             }
         }
 
